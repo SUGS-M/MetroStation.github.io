@@ -25,13 +25,14 @@ for (var i = 0; i < urlData.length; i++) {
 }
 window.param = {
   //roomNumber
+    //https://sugs-m.github.io/MetroStation.github.io/?scene=KaiLiNan
   projectName: 'KaiLiNan',
-  useP2P: window.location.href.split("useP2P=true").length > 1,
-  needDetection: window.location.href.split("needDetection=true").length > 1,
-  onlyP2P: window.location.href.split("onlyP2P=true").length > 1,
-  testTime: window.location.href.split("testTime=").length > 1 ? window.location.href.split("testTime=")[1] : 60
+ // useP2P: window.location.href.split("useP2P=true").length > 1,
+  //needDetection: window.location.href.split("needDetection=true").length > 1,
+  //onlyP2P: window.location.href.split("onlyP2P=true").length > 1,
+  //testTime: window.location.href.split("testTime=").length > 1 ? window.location.href.split("testTime=")[1] : 60
 };
-window.param.ip = window.location.href.split("http://")[1].split(":")[0];
+window.param.ip = sugs-m.github.io/MetroStation.github.io;
 window.param.socketURL = "http://" + window.param.ip + ":8888/";
 window.param.dectionURL = "http://" + window.param.ip + ":9999/";
 param.socketURL = "http://42.192.61.61:8888/";</script>
