@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SLM Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="/favicon.df682a99.ico">
+    <link rel="stylesheet" href="/style.78032849.css">
+    <script>var urlData = window.location.href.split("?").length > 1 ? window.location.href.split("?")[1] : '';
+urlData = urlData.split('&');
+window.param = {};
+for (var i = 0; i < urlData.length; i++) {
+  var s = urlData[i];
+  var a = s.split('=');
+  if (a.length === 2) {
+    if (a[1] === 'true') a[1] = true;else if (a[1] === 'false') a[1] = false;
+    if (a[0] === 'testTime') try {
+      a[1] = parseFloat(a[1]);
+    } catch (e) {
+      console.log(e);
+    }
+    window.param[a[0]] = a[1];
+  }
+}
+window.param = {
+  //roomNumber
+  projectName: window.location.href.split("scene=")[1].split("&")[0],
+  useP2P: window.location.href.split("useP2P=true").length > 1,
+  needDetection: window.location.href.split("needDetection=true").length > 1,
+  onlyP2P: window.location.href.split("onlyP2P=true").length > 1,
+  testTime: window.location.href.split("testTime=").length > 1 ? window.location.href.split("testTime=")[1] : 60
+};
+window.param.ip = window.location.href.split("http://")[1].split(":")[0];
+window.param.socketURL = "http://" + window.param.ip + ":8888/";
+window.param.dectionURL = "http://" + window.param.ip + ":9999/";
+param.socketURL = "http://42.192.61.61:8888/";</script>
+    <script src="/app.a6a4d504.js"></script>
+<script src="/style.78032849.js"></script></head>
+<body>
+    <main class="wrap">
+    </main>
+</body>
